@@ -16,11 +16,13 @@ function hasTargetSum(array, target) {
   * n steps for the for loop because I don't know the size of the array
   * n steps for the assignment of a value for 'solutionNumber' because this one step happens each iteration and I don't know the size of the array
   * 2n steps, one n for each condition checked, because the conditions are checked on each iteration and I don't know the size of the array
+  * *** Adjustment to comments ***
+  * After watching the video and researching 'MDN', '.includes()' is iterative and therefore changes part of the Big O complexity from 2n for the if statment to 2n^2
   * 1 step that can potentially happen if the condition in the for loop does not return true
   * 
-  * Big O = O(4n + 1)
+  * Big O = O(4n^2 + 1)
   * 
-  * Remove Constants = O(n)
+  * Remove Constants = O(n^2)
 */
 
 /* 
